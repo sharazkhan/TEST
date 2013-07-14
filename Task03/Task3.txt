@@ -1,0 +1,7 @@
+
+
+1. I think customer_name and cutomer_phone can be indexed.And what i would suggest is that when we write the query specify the column name in the query which could have unique values. so that the search starts with it and it omits the unwanted rows.
+
+2. I would defenitely opt for myIsam which is the default mysql engine and is faster.
+
+Additional to this what i suggest is that, you have to increase the server time in ini settings.

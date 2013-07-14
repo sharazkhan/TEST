@@ -1,0 +1,29 @@
+My findings
+-----------
+-----------
+
+ tes.html
+----------
+ 1.Avoid using inline css codes (<FONT FACE="verdana" COLOR="green">) which is shown in the code.SEO wise it could an issue.
+ 
+ 2.<DIV ID="fb-root"></DIV> is been put outside the body tags. its not a good practice i belive.
+
+ 3.Needless useage of <SCRIPT></SCRIPT> in second last line.
+
+ 4.Avoid scripting directly in the page . jquery ajax function is bee initialised in page directly itself.which could be again seo issue.instead try scripting functions in external page include it.
+
+
+getinfo.php
+-----------
+  1.Well i guess instead using require_once we can go with inlcude or inlcude_once. so that execution of the scriot doesnt stops if any warnings or minor error is there.
+
+  2.Unknown class name 'dataObj' has been called which is not declaration anywhere.
+  
+  3.Error: additional ')' in $ArrayURL = split('/', $_SERVER[REQUEST_URI]));
+
+  4.Instead of split you coould use explode ehich my consume less time.split is mainly used for regular expression split.
+
+data.php
+---------
+
+1.functions get and getAll in class baseObj does not contains $table parameter and its been used in query.
