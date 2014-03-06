@@ -1,5 +1,5 @@
 <?php
-///// did today for testing...
+///// in server now
 $string = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"; // sample string
 $array = explode(',', $string);  // converted to arrray splitting with comma.
 $count = sizeof($array); //get the count
